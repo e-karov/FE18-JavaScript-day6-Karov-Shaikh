@@ -1,0 +1,27 @@
+const books = `[
+        {"title": "Javascript for Dummies",
+        "author": "Dummy Dumb Dumb",
+        "img": "https://www.shutterstock.com/image-photo/dummy-book-isolated-on-white-260nw-1743346814.jpg",
+        "read": "true"
+        },
+        {"title": "Instructables for Dummies",
+        "author": "Instra K. Tibles",
+        "img": "https://content.instructables.com/FLB/ETJU/FZWXOL8Z/FLBETJUFZWXOL8Z.png?auto=webp&frame=1&width=320&md=c0e1c91aeb8d8a5483ac6d6aa71b8eb6",
+        "read": "false"
+        },
+        {"title": "DOS for Dummies",
+        "author": "Dan Gookin",
+        "img": "http://www.wambooli.com/blog/wp-content/uploads/2016/08/1991-DOS_For_Dummies.jpg",
+        "read": "false"
+        },
+        {"title": "Get Rich Online for Dummies",
+        "author": "Dummy Dumb Dumb",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUm51B2FFDi8Kw55h07hy8VqQk00Ines4pxsiiv7pC_BVujmUpIMpL5uAtZILnsvDgkho&usqp=CAU",
+        "read": "false"
+        },
+        {"title": "Javascript for Dummies",
+        "author": "Dummy Dumb Dumb",
+        "img": "https://www.shutterstock.com/image-photo/dummy-book-isolated-on-white-260nw-1743346814.jpg",
+        "read": "false"
+        }
+    ]`

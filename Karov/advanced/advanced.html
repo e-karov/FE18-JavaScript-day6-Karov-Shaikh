@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced Exercise</title>
+
+        <style>
+            .container {
+                width: 75%;
+                margin: auto;
+            }
+            p, img {
+                margin: .3rem;
+                display: inline-block; 
+                padding: 1rem;
+                vertical-align: top;
+                font-size: larger;
+            }
+            .book {
+                margin: 1em;
+                opacity: 80%;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="books.json"></script>
+
+        <div class="container">
+            
+        </div>
+
+        <script>
+            const data = JSON.parse(books);
+            const result = document.querySelector(".container")
+            for (const book of data) {
+                let color = "yellow";
+                let msg = "Not read yet";
+                if (book.read === "true") {
+                    color = "lightgreen";
+                    msg = "Already read";
+                };
+                result.innerHTML += `<div class="book" style="border: .4em solid ${color}">
+                                        <h2 style="text-align: center;">${msg}</h2>
+                                        <img width="100px" height="120px" src="${book.img}">
+                                        <p>
+                                            <b>Book Title: </b> ${book.title}, <b>Author: </b> ${book.author}
+                                        </p>
+                                    </div>`;
+            }
+        </script>
+
+    </body>
+</html>
